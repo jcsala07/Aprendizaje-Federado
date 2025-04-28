@@ -7,17 +7,20 @@ El objetivo es simular un entorno federado donde cada integrante del equipo entr
 
 ## Estructura de archivos
 
-- **'Individual_Training_Models/'**  
+- **Individual_Training_Models/**
   Carpeta para almacenar los modelos entrenados individualmente por cada participante.
 
-- **'TheModel.py'**  
+- **TheModel.py**  
   Archivo que contiene la definición del modelo global en TensorFlow.
 
-- **'local_training.ipynb'**  
+- **local_training.ipynb**  
   Notebook que contiene el ciclo de entrenamiento y la evaluación local de los modelos, incluyendo:
   - Curvas de aprendizaje (loss y accuracy)
   - Reporte de clasificación (classification report)
-
+- **global_model.ipynb**
+  Notebook encargado de combinar los modelos locales para generar el modelo global.  
+  Contiene la implementación de tres estrategias de agregación.
+  
 ## Flujo de Trabajo
 
 1. **División de Datos (confidencial)**  
