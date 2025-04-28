@@ -1,5 +1,17 @@
 # Aprendizaje Federado con MNIST
+Cecilia Paláu
 
+Juan Carlos Sala
+
+Rodrigo López
+
+Ricardo Vargas
+
+Donnet Hernandez
+
+Yuu Ricardo Akachi
+
+Pablo Monzon
 ## Descripción
 
 Este proyecto implementa un flujo de **aprendizaje federado** usando la base de datos **MNIST** y un modelo de **TensorFlow**.  
