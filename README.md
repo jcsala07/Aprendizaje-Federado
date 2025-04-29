@@ -29,6 +29,9 @@ El objetivo es simular un entorno federado donde cada integrante del equipo entr
   Notebook que contiene el ciclo de entrenamiento y la evaluación local de los modelos, incluyendo:
   - Curvas de aprendizaje (loss y accuracy)
   - Reporte de clasificación (classification report)
+  - **Entrada de datos**: cada integrante debe cargar su partición de datos `mnist_part_n.npz`, donde `n` es el número de su partición asignada.  
+    También se carga un conjunto de validación común: `mnist_validation_data.npz`.
+
 - **global_model.ipynb**
   Notebook encargado de combinar los modelos locales para generar el modelo global.  
   Contiene la implementación de tres estrategias de agregación.
