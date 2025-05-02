@@ -19,8 +19,8 @@ El objetivo es simular un entorno federado donde cada integrante del equipo entr
 
 ## Estructura de archivos
 
-- **Individual_Training_Models/**
-  Carpeta para almacenar los modelos entrenados individualmente por cada participante.
+- **modelos/**
+  Carpeta para almacenar los modelos entrenados individualmente por cada participante y los modelos globales generados después del Aprendizaje Federado.
 
 - **TheModel.py**  
   Archivo que contiene la definición del modelo global en TensorFlow.
@@ -32,7 +32,7 @@ El objetivo es simular un entorno federado donde cada integrante del equipo entr
   - **Entrada de datos**: cada integrante debe cargar su partición de datos `mnist_part_n.npz`, donde `n` es el número de su partición asignada.  
     También se carga un conjunto de validación común: `mnist_validation_data.npz`.
 
-- **global_model.ipynb**
+- **global_training.ipynb**
   Notebook encargado de combinar los modelos locales para generar el modelo global.  
   Contiene la implementación de tres estrategias de agregación.
   
@@ -54,5 +54,8 @@ El objetivo es simular un entorno federado donde cada integrante del equipo entr
      En lugar del promedio, se calcula la **mediana** de los pesos de los modelos locales.  
      Esto es más robusto a valores atípicos.
 
-   - **Método 3: ?**  
+   - **Método 3: Trimmed Mean**
+     La media recortada  es una técnica que mejora la resistencia del modelo global frente a valores atípicos.
+
+
 
